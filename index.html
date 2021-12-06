@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title>EMI Calcuator</title>
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div id="emi_calculator">
+            <label>
+                Loan Amount: <input type="text" id="loan_amount">
+                <p id="loan_amount_err" style="display: none;"></p>
+            </label>
+            <label>
+                Tenure (Months): <input type="text" id="tenure">
+                <p id="tenure_error" style="display: none;"></p>
+            </label>
+            <label>
+                Interest Rate (Percentage): <input type="text" id="interest_rate">
+                <p id="rate_error" style="display: none;"></p>
+            </label>
+            <p id="emi"></p>
+            <button type="button" id="emi_calc_submit">
+                Calculate EMI
+            </button>
+            <script>
+                document.getElementById('emi_calc_submit').addEventListener('click',handleEMIForm);
+            </script>
+        </div>
+    </body>
+</html>
